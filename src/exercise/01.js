@@ -3,7 +3,7 @@
 
 import * as React from 'react'
 
-function Greeting({initialValue}) {
+function Greeting({initialValue = ''}) {
   const [name, setName] = React.useState(initialValue);
 
   function handleChange(event) {
@@ -23,7 +23,7 @@ function Greeting({initialValue}) {
 }
 
 function App() {
-  return <Greeting initialValue={'alex'}/>
+  return <Greeting initialValue="alejandro"/>
 }
 
 export default App
